@@ -94,3 +94,16 @@ h3{
   color: #fff;
   opacity: 1;
 }
+
+.quotes{
+  font-family: 'Goudy Bookletter 1911', serif;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: left;
+  margin: 50px auto;
+}
+
+.author_name_white {
+  font-family: "WellFleet";
+  
+}
