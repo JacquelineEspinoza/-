@@ -1,23 +1,24 @@
 html{
   font-size: 62.5%;
-  width: 100%;
-  height: 100%;
 }
 
 body{
   margin: 0;
   padding: 0;
-  height: 100%;
   font-size: 1.75rem;
-}
-
-section{
-  width: 100%;
-  height: 100vh;
 }
 
 h1{
   font-size: 2.4rem;
+}
+
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#F9F8F1, #09383E);
+  border-radius: 10px;
 }
 
 .container_item{
@@ -26,14 +27,11 @@ h1{
 
 .landing-page-container{
   width: 100%;
-  min-height: 100%;
   height: 100vh;
-  background-image: url(pexels-photo-1020317.jpeg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  display: table;
+  background-image: url(concrete-wall-2.png);
+  background-repeat: repeat;
+  overflow: auto;
+  display: run-inS;
   font-family: 'Montserrat', sans-serif;
   color: #09383E;
 }
@@ -104,7 +102,7 @@ h1{
   height: 50rem;
   border-radius: 50%;
   margin: 0 auto;
-  position: relative;
+  position: sticky;
   top: 7rem;
 }
 
