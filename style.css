@@ -1,5 +1,6 @@
 html{
-  font-size: 62.5%;
+  /*MAIN FONT SIZING*/
+  font-size: 64.5%;
 }
 
 body{
@@ -8,27 +9,26 @@ body{
   font-size: 1.75rem;
 }
 
-h1{
-  font-size: 2.4rem;
-}
-
+/* SCROLL BAR */
 ::-webkit-scrollbar{
   width: 12px;
 }
 
 ::-webkit-scrollbar-thumb{
-  background: linear-gradient(#F9F8F1, #09383E);
+  visibility: none;
   border-radius: 10px;
 }
 
 .container_item{
-  margin: 0 auto 0;
+  margin: 4 auto 0;
 }
 
+/*BACKGROUND IMAGE AND NAME FONT*/
 .landing-page-container{
   width: 100%;
   height: 100vh;
-  background-image: url(concrete-wall-2.png);
+  background-image: url(pexels-photo-319382.jpeg);
+  background-size: cover;
   background-repeat: repeat;
   overflow: auto;
   display: run-inS;
@@ -51,33 +51,31 @@ h1{
   display: block;
 }
 
+/*MENU*/
 .menu-icon{
   width: 2.5rem;
   height: 1.5rem;
-  display: inline-block;
   cursor: pointer;
-  font-family: 'Signika',Sans;
-  background: rgba(255, 255, 255, .5);
+  font-family: 'Shrikhand', cursive;
+  background: none;
   position: absolute;
   box-sizing: inherit;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  text-decoration: none;
+  border-bottom: none;
 }
 
 nav ul{
   text-decoration-color: #09383E;
-  text-decoration: none;
-  list-style-type: none;
-  padding: 20px;
-  border-bottom: 1px solid rgba(0,0,0,.3);
+  list-style: none;
+  padding: 30px;
   min-width: 100px;
   position: absolute;
   margin-top: 1px;
   opacity: 0;
   visibility: inherit;
-  box-shadow: 0 2px 5px rgba(0,0,0,.5);
+  box-shadow: none;
   transition: .5s;
 }
+
 
 nav ul:hover{
   text-decoration: none;
@@ -85,11 +83,29 @@ nav ul:hover{
   visibility: visible;
 }
 
-nav ul li:visited{
-  text-decoration: none;
+nav ul li a, nav ul li a:after, nav ul li a:before{
+  transition: all .5s;
+  color: #09383E;
+}
+
+nav ul li a:hover{
+  color:#3a5f64;
+}
+
+nav.shift ul li a{
+  position: relative;
+  z-index: 1;
+}
+
+nav.shift ul li a:hover{
+  color: #09383E;
+  list-style: none;
+}
+
+nav.shift ul li a:hover:after{
   opacity: 1;
   visibility: visible;
-  color: #184771;
+  height: 100%;
 }
 
 
@@ -135,7 +151,7 @@ nav ul li:visited{
 .ellipse-container{
   width: 50rem;
   height: 50rem;
-  border-radius: 50%;
+  border-radius: 90%;
   margin: 0 auto;
   position: sticky;
   top: 7rem;
