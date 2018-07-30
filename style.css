@@ -1,5 +1,4 @@
 html{
-  /*MAIN FONT SIZING*/
   font-size: 64.5%;
 }
 
@@ -9,21 +8,34 @@ body{
   font-size: 1.75rem;
 }
 
-/* SCROLL BAR */
+.header{
+  width: 100%;
+  height: 2rem;
+  padding: 3rem 0;
+  display: block;
+}
+
+.header_item{
+  display: inline-block;
+  float: left;
+}
+
+/********************** SCROLL BAR *********************************/
 ::-webkit-scrollbar{
   width: 12px;
 }
 
 ::-webkit-scrollbar-thumb{
   visibility: none;
-  border-radius: 10px;
 }
+
+/*******************BACKGROUND IMAGE AND NAME FONT******************/
 
 .container_item{
   margin: 4 auto 0;
 }
 
-/*BACKGROUND IMAGE AND NAME FONT*/
+
 .landing-page-container{
   width: 100%;
   height: 100vh;
@@ -44,14 +56,7 @@ body{
   position: relative;
 }
 
-.header{
-  width: 100%;
-  height: 2rem;
-  padding: 3rem 0;
-  display: block;
-}
-
-/*MENU*/
+/********************** MENU ***************************************/
 .menu-icon{
   width: 2.5rem;
   height: 1.5rem;
@@ -63,6 +68,32 @@ body{
   border-bottom: none;
 }
 
+.menu-icon_line{
+  width: 1.5rem;
+  height: .2rem;
+  background: #0C383E;
+  display: block;
+}
+
+.menu-icon_line:before, .menu-icon_line:after{
+  content: '';
+  width: 1.5rem;
+  height: .2rem;
+  background: #0C383E;
+  display: inline-block;
+  position: relative;
+}
+
+.menu-icon_line:before{
+  left: .5rem;
+  top: -.6rem;
+}
+
+.menu-icon_line:after{
+  top: -1.8rem;
+}
+
+/************************ MENU NAVIGATION ***************************/
 nav ul{
   text-decoration-color: #09383E;
   list-style: none;
@@ -108,37 +139,7 @@ nav.shift ul li a:hover:after{
   height: 100%;
 }
 
-
-.header_item{
-  display: inline-block;
-  float: left;
-}
-
-.menu-icon_line{
-  width: 1.5rem;
-  height: .2rem;
-  background: #0C383E;
-  display: block;
-}
-
-.menu-icon_line:before, .menu-icon_line:after{
-  content: '';
-  width: 1.5rem;
-  height: .2rem;
-  background: #0C383E;
-  display: inline-block;
-  position: relative;
-}
-
-.menu-icon_line:before{
-  left: .5rem;
-  top: -.6rem;
-}
-
-.menu-icon_line:after{
-  top: -1.8rem;
-}
-
+/************************* ELLIPSES ******************************/
 .heading{
   width: 90%;
   font-size: 2rem;
@@ -244,7 +245,18 @@ nav.shift ul li a:hover:after{
   top: 50%;
   transform: translateY(-50%);
 }
+/********************** ABOUT PAGE  ************************************/
+.Slide1{
+  background-image: url(IMG_2004.png);
+  border: none;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  overflow: auto;
+  background-size: cover;
+}
 
+/********************** KEYFRAMES ************************************/
 @keyframes ellipseRotate {
   0%{
     transform: rotate(-45deg);
